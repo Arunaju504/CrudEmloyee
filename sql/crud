@@ -1,0 +1,7 @@
+drop table employee;
+delete  from employee  where empid='101';
+create table employee (id  serial ,empid varchar(50) ,name varchar(50),age varchar(10),designation varchar(100),phone varchar(25),salary varchar(25) );
+select * from employee;
+insert into employee(empid,name,age,designation,phone,salary) values('300','anbu','27','developer','9600240164','100000');
+update employee set salary='1000',designation='testing'   where empid='123';
+select * from employee where salary>'50000';
